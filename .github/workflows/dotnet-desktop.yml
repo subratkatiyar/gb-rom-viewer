@@ -26,8 +26,8 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release --no-restore ./GBRomViewer.sln
 
-    # - name: Publish
-    #   run: dotnet publish --configuration Release --no-restore --output ./publish ./path/to/your/project.csproj
+    - name: Publish
+      run: dotnet publish --configuration Release --no-restore --output ./publish ./GBRomViewer/GBRomViewer.csproj
 
     - name: Archive Artifacts
       uses: actions/upload-artifact@v3
